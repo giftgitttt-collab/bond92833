@@ -1,0 +1,2821 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Zizo ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Tajawal:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+
+<style>
+
+/* =====================================================
+   COLORS
+===================================================== */
+
+:root{
+
+    --bg:#fff8fb;
+    --white:#ffffff;
+
+    --pink:#e89aaa;
+    --pink-dark:#c96f84;
+
+    --rose:#f5c8d1;
+    --cream:#fff0f4;
+
+    --text:#49383d;
+    --soft:#806c72;
+
+    --line:#f1cdd6;
+
+    --shadow:
+    0 20px 50px rgba(201,111,132,.13);
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    font-family:'Tajawal',sans-serif;
+
+    background:
+
+    radial-gradient(
+        circle at 10% 10%,
+        #ffe7ee 0 2px,
+        transparent 3px
+    ),
+
+    radial-gradient(
+        circle at 90% 30%,
+        #f8d6df 0 2px,
+        transparent 3px
+    ),
+
+    var(--bg);
+
+    background-size:
+    35px 35px,
+    45px 45px,
+    auto;
+
+    color:var(--text);
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+
+body:before,
+body:after{
+
+    content:"♡";
+
+    position:fixed;
+
+    font-size:120px;
+
+    color:rgba(232,154,170,.08);
+
+    z-index:-1;
+
+}
+
+
+body:before{
+
+    top:5%;
+    left:-30px;
+
+}
+
+
+body:after{
+
+    bottom:5%;
+    right:-30px;
+
+}
+
+
+.handwritten{
+
+    font-family:'Caveat',cursive;
+
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.container{
+
+    width:100%;
+
+    max-width:780px;
+
+    margin:auto;
+
+    padding:25px 18px 60px;
+
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.main-card{
+
+    background:
+    rgba(255,255,255,.94);
+
+    border:
+    1px solid rgba(232,154,170,.25);
+
+    border-radius:32px;
+
+    padding:35px 25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+#birthday-intro{
+
+    text-align:center;
+
+    margin-top:3vh;
+
+    animation:fadeUp 1s ease;
+
+}
+
+
+.intro-hearts{
+
+    color:var(--pink);
+
+    font-size:1.4rem;
+
+    letter-spacing:10px;
+
+    margin-bottom:5px;
+
+    animation:heartFloat 2s infinite ease-in-out;
+
+}
+
+
+.intro-title{
+
+    font-size:4.5rem;
+
+    line-height:1;
+
+    color:var(--pink-dark);
+
+}
+
+
+.intro-name{
+
+    font-size:1.5rem;
+
+    color:var(--soft);
+
+    margin-bottom:20px;
+
+}
+
+
+.intro-photo{
+
+    width:100%;
+
+    height:520px;
+
+    background:#fff;
+
+    padding:10px;
+
+    border-radius:28px;
+
+    border:
+    1px solid #f1dce2;
+
+    box-shadow:var(--shadow);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+    margin-bottom:22px;
+
+}
+
+
+.intro-photo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    border-radius:20px;
+
+}
+
+
+.intro-text{
+
+    color:var(--soft);
+
+    font-size:1.05rem;
+
+    line-height:2;
+
+    margin-bottom:22px;
+
+}
+
+
+/* =====================================================
+   PASSWORD
+===================================================== */
+
+#card-lock{
+
+    display:none;
+
+    text-align:center;
+
+    margin-top:7vh;
+
+    animation:fadeUp .8s ease;
+
+}
+
+
+.lock-heart{
+
+    width:85px;
+
+    height:85px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f8cbd5,
+        #e89aaa
+    );
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:32px;
+
+    box-shadow:
+    0 12px 30px rgba(232,154,170,.25);
+
+}
+
+
+.lock-title{
+
+    font-size:2rem;
+
+    color:var(--pink-dark);
+
+    margin-bottom:8px;
+
+}
+
+
+.lock-subtitle{
+
+    color:var(--soft);
+
+    margin-bottom:25px;
+
+}
+
+
+.lock-hint{
+
+    background:var(--cream);
+
+    border:
+    1px dashed var(--pink);
+
+    color:var(--pink-dark);
+
+    padding:13px;
+
+    border-radius:16px;
+
+    margin-bottom:20px;
+
+}
+
+
+.custom-input{
+
+    width:100%;
+
+    padding:16px;
+
+    border-radius:16px;
+
+    border:
+    2px solid #f0d9df;
+
+    background:#fffafd;
+
+    outline:none;
+
+    text-align:center;
+
+    font-family:inherit;
+
+    font-size:1rem;
+
+    color:var(--text);
+
+    margin-bottom:15px;
+
+}
+
+
+.custom-input:focus{
+
+    border-color:var(--pink);
+
+    box-shadow:
+    0 0 20px rgba(232,154,170,.15);
+
+}
+
+
+.btn-action{
+
+    width:100%;
+
+    border:0;
+
+    padding:15px 20px;
+
+    border-radius:16px;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--pink),
+        var(--pink-dark)
+    );
+
+    color:white;
+
+    font-family:inherit;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 10px 25px rgba(201,111,132,.2);
+
+    transition:.3s;
+
+}
+
+
+.btn-action:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+.error-msg{
+
+    display:none;
+
+    color:#d45c67;
+
+    font-size:.85rem;
+
+    margin-top:12px;
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+#stage-hero{
+
+    display:none;
+
+    text-align:center;
+
+    animation:fadeUp .8s ease;
+
+}
+
+
+.hero-top{
+
+    margin-bottom:25px;
+
+}
+
+
+.small-love{
+
+    color:var(--pink-dark);
+
+    font-size:.95rem;
+
+    margin-bottom:5px;
+
+}
+
+
+.title-en{
+
+    font-size:4rem;
+
+    line-height:1;
+
+    color:var(--pink-dark);
+
+}
+
+
+.hero-name{
+
+    font-size:1.2rem;
+
+    color:var(--soft);
+
+}
+
+
+.hero-img-box{
+
+    width:100%;
+
+    min-height:520px;
+
+    background:#fff;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    padding:10px;
+
+    box-shadow:var(--shadow);
+
+    border:
+    1px solid #f4dfe5;
+
+    margin-bottom:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.hero-img-box img{
+
+    width:100%;
+
+    height:500px;
+
+    object-fit:contain;
+
+    border-radius:20px;
+
+}
+
+
+.hero-caption{
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+    margin-bottom:22px;
+
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+#modal-stop{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    rgba(73,56,61,.48);
+
+    backdrop-filter:blur(9px);
+
+    z-index:999;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px;
+
+}
+
+
+.modal-card{
+
+    width:100%;
+
+    max-width:520px;
+
+    max-height:92vh;
+
+    overflow-y:auto;
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.2);
+
+    animation:pop .4s ease;
+
+}
+
+
+.modal-title{
+
+    color:var(--pink-dark);
+
+    font-size:1.5rem;
+
+    margin-bottom:18px;
+
+}
+
+
+.zizo-img-container{
+
+    width:100%;
+
+    height:480px;
+
+    background:#fff8fa;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:
+    6px solid #fff0f4;
+
+    margin-bottom:15px;
+
+}
+
+
+.zizo-img-container img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+}
+
+
+.date-badge{
+
+    display:inline-block;
+
+    background:#fde3e9;
+
+    color:var(--pink-dark);
+
+    padding:6px 18px;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+
+.modal-text{
+
+    color:var(--soft);
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+}
+
+
+/* =====================================================
+   TIMELINE
+===================================================== */
+
+#stage-timeline{
+
+    display:none;
+
+    animation:fadeUp .8s ease;
+
+}
+
+
+.timeline-header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+
+.timeline-title{
+
+    font-size:3rem;
+
+    color:var(--pink-dark);
+
+}
+
+
+.timeline-subtitle{
+
+    color:var(--soft);
+
+    margin-top:5px;
+
+}
+
+
+.alert-banner{
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff1f4,
+        #fff8fa
+    );
+
+    border:
+    1px solid #f3d3db;
+
+    color:var(--pink-dark);
+
+    padding:14px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    font-weight:600;
+
+}
+
+
+/* =====================================================
+   TIMELINE CONTAINER
+===================================================== */
+
+.timeline{
+
+    position:relative;
+
+    padding:10px 0 20px;
+
+}
+
+
+/* CENTER LINE */
+
+.timeline:before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    bottom:0;
+
+    right:50%;
+
+    width:3px;
+
+    background:
+    linear-gradient(
+        to bottom,
+        transparent,
+        var(--rose),
+        var(--pink),
+        var(--rose),
+        transparent
+    );
+
+    transform:translateX(50%);
+
+}
+
+
+/* =====================================================
+   TIMELINE ITEM
+===================================================== */
+
+.timeline-item{
+
+    position:relative;
+
+    width:50%;
+
+    padding:0 35px 55px;
+
+    min-height:220px;
+
+}
+
+
+.timeline-item:nth-child(odd){
+
+    margin-right:50%;
+
+    text-align:right;
+
+}
+
+
+.timeline-item:nth-child(even){
+
+    margin-left:0;
+
+    text-align:left;
+
+}
+
+
+/* DOT */
+
+.timeline-dot{
+
+    position:absolute;
+
+    top:20px;
+
+    right:-12px;
+
+    width:25px;
+
+    height:25px;
+
+    border-radius:50%;
+
+    background:white;
+
+    border:
+    5px solid var(--pink);
+
+    box-shadow:
+    0 0 0 5px rgba(232,154,170,.12);
+
+    z-index:5;
+
+}
+
+
+.timeline-item:nth-child(even)
+.timeline-dot{
+
+    left:-12px;
+
+    right:auto;
+
+}
+
+
+/* =====================================================
+   MYSTERY BOX
+===================================================== */
+
+.mystery-box{
+
+    width:105px;
+
+    height:105px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #e89aaa,
+        #c96f84
+    );
+
+    color:white;
+
+    border-radius:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:2.4rem;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 15px 30px rgba(201,111,132,.22);
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+
+.timeline-item:nth-child(odd)
+.mystery-box{
+
+    margin-right:auto;
+
+}
+
+
+.timeline-item:nth-child(even)
+.mystery-box{
+
+    margin-left:auto;
+
+}
+
+
+.mystery-box:hover{
+
+    transform:
+    translateY(-7px)
+    rotate(3deg)
+    scale(1.04);
+
+}
+
+
+.mystery-box.opened{
+
+    transform:scale(.8);
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
+
+/* =====================================================
+   TIMELINE CONTENT
+===================================================== */
+
+.timeline-content{
+
+    margin-top:18px;
+
+    display:none;
+
+    animation:fadeUp .6s ease;
+
+}
+
+
+.timeline-content.show{
+
+    display:block;
+
+}
+
+
+.timeline-photo{
+
+    width:100%;
+
+    height:300px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:7px;
+
+    border:
+    1px solid #f0dce2;
+
+    box-shadow:
+    0 12px 30px rgba(201,111,132,.1);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:15px;
+
+}
+
+
+.timeline-photo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    border-radius:15px;
+
+}
+
+
+.memory-text{
+
+    background:#fff5f7;
+
+    border-radius:18px;
+
+    padding:15px;
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    font-size:.95rem;
+
+}
+
+
+.memory-number{
+
+    color:var(--pink-dark);
+
+    font-weight:800;
+
+    margin-bottom:7px;
+
+}
+
+
+/* =====================================================
+   FINAL BUTTON
+===================================================== */
+
+.btn-gift-final{
+
+    margin-top:25px;
+
+    opacity:.35;
+
+    pointer-events:none;
+
+}
+
+
+.btn-gift-final.active{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+    animation:pulse 1.5s infinite;
+
+}
+
+
+/* =====================================================
+   FINAL
+===================================================== */
+
+#stage-final{
+
+    display:none;
+
+    animation:fadeUp .8s ease;
+
+}
+
+
+.final-header{
+
+    text-align:center;
+
+    margin-bottom:22px;
+
+}
+
+
+.final-title{
+
+    font-size:3rem;
+
+    color:var(--pink-dark);
+
+}
+
+
+.final-subtitle{
+
+    color:var(--soft);
+
+}
+
+
+.sweet-text{
+
+    background:#fff5f7;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    line-height:2;
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+
+.audio-card{
+
+    background:white;
+
+    border:
+    1px solid #f0dce2;
+
+    border-radius:25px;
+
+    padding:12px 15px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
+
+    margin-bottom:25px;
+
+}
+
+
+.btn-audio-play{
+
+    width:48px;
+
+    height:48px;
+
+    min-width:48px;
+
+    border-radius:50%;
+
+    border:0;
+
+    background:var(--pink);
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+.wave-bars{
+
+    flex:1;
+
+    height:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:4px;
+
+}
+
+
+.bar{
+
+    width:4px;
+
+    height:30%;
+
+    background:var(--rose);
+
+    border-radius:5px;
+
+}
+
+
+.audio-card.playing .bar{
+
+    animation:
+    wave .8s infinite alternate;
+
+}
+
+
+.bar:nth-child(2){
+    animation-delay:.1s
+}
+
+.bar:nth-child(3){
+    animation-delay:.2s
+}
+
+.bar:nth-child(4){
+    animation-delay:.3s
+}
+
+.bar:nth-child(5){
+    animation-delay:.4s
+}
+
+.bar:nth-child(6){
+    animation-delay:.5s
+}
+
+
+.final-photo-box{
+
+    width:100%;
+
+    min-height:550px;
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:10px;
+
+    border:
+    1px solid #f0dce2;
+
+    box-shadow:var(--shadow);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.final-photo-box img{
+
+    width:100%;
+
+    height:530px;
+
+    object-fit:contain;
+
+    border-radius:20px;
+
+}
+
+
+.final-love{
+
+    text-align:center;
+
+    font-size:2.5rem;
+
+    color:var(--pink-dark);
+
+    margin-top:22px;
+
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+@keyframes pop{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+@keyframes pulse{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.03);
+    }
+
+}
+
+
+@keyframes wave{
+
+    from{
+        height:20%;
+    }
+
+    to{
+        height:100%;
+    }
+
+}
+
+
+@keyframes heartFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-6px);
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+    .container{
+
+        padding:
+        15px 10px 40px;
+
+    }
+
+
+    .main-card{
+
+        padding:
+        25px 15px;
+
+        border-radius:25px;
+
+    }
+
+
+    .intro-title{
+
+        font-size:3.5rem;
+
+    }
+
+
+    .intro-photo{
+
+        height:430px;
+
+    }
+
+
+    .title-en{
+
+        font-size:3rem;
+
+    }
+
+
+    .hero-img-box{
+
+        min-height:430px;
+
+    }
+
+
+    .hero-img-box img{
+
+        height:410px;
+
+    }
+
+
+    .zizo-img-container{
+
+        height:400px;
+
+    }
+
+
+    /* MOBILE TIMELINE */
+
+    .timeline:before{
+
+        right:20px;
+
+        transform:none;
+
+    }
+
+
+    .timeline-item,
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+
+        width:100%;
+
+        margin:0;
+
+        padding:
+        0 0 55px 55px;
+
+        text-align:right;
+
+    }
+
+
+    .timeline-dot,
+    .timeline-item:nth-child(even)
+    .timeline-dot{
+
+        right:8px;
+
+        left:auto;
+
+        top:20px;
+
+    }
+
+
+    .mystery-box,
+    .timeline-item:nth-child(odd)
+    .mystery-box,
+    .timeline-item:nth-child(even)
+    .mystery-box{
+
+        margin-right:0;
+
+        margin-left:auto;
+
+    }
+
+
+    .timeline-photo{
+
+        height:400px;
+
+    }
+
+
+    .final-photo-box{
+
+        min-height:450px;
+
+    }
+
+
+    .final-photo-box img{
+
+        height:430px;
+
+    }
+
+
+    .timeline-title{
+
+        font-size:2.4rem;
+
+    }
+
+
+    .final-title{
+
+        font-size:2.5rem;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     OUR SONG ❤️
+
+     مهم جدًا:
+
+     حطي أغنيتكم في نفس فولدر index.html
+     وسمّيها:
+
+     our-song.mp3
+
+     أو غيري الاسم في src تحت.
+===================================================== -->
+
+<audio
+    id="audio-our-song"
+    loop
+    preload="auto">
+
+    <source
+        src="شفت كلام - دندنها.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+<!-- =====================================================
+     VOICE RECORD
+
+     حطي التسجيل الصوتي هنا باسم:
+
+     voice.mp3
+
+===================================================== -->
+
+<audio
+    id="audio-voice"
+    preload="auto">
+
+    <source
+        src="voice.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+
+<div class="container">
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<div
+    id="birthday-intro"
+    class="main-card">
+
+
+    <div class="intro-hearts">
+
+        ♡ ✨ ♡
+
+    </div>
+
+
+    <h1 class="intro-title handwritten">
+
+        Happy Birthday
+
+    </h1>
+
+
+    <h2 class="intro-name">
+
+        Zizo ❤️
+
+    </h2>
+
+
+    <div class="intro-photo">
+
+        <img
+            src="Screenshot 2026-10-05 045548.jpg"
+            alt="Our Photo">
+
+    </div>
+
+
+    <p class="intro-text">
+
+        النهاردة مش يوم عادي...
+
+        <br>
+
+        عشان النهاردة عيد ميلاد
+        شخص غالي عليا جدًا ❤️
+
+    </p>
+
+
+    <button
+        class="btn-action"
+        onclick="startBirthday()">
+
+        ابدأ الحكاية ✨
+
+    </button>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     PASSWORD
+===================================================== -->
+
+<div
+    id="card-lock"
+    class="main-card">
+
+
+    <div class="lock-heart">
+
+        <i class="fas fa-heart"></i>
+
+    </div>
+
+
+    <h2 class="lock-title">
+
+        هلا يا زيزو ✨
+
+    </h2>
+
+
+    <p class="lock-subtitle">
+
+        في حاجة صغيرة معمولة مخصوص عشانك ❤️
+
+    </p>
+
+
+    <div class="lock-hint">
+
+        💡 اكتب اسم الدلع اللي محدش يعرفه غيرك
+
+    </div>
+
+
+    <input
+        type="text"
+        id="pass-input"
+        class="custom-input"
+        placeholder="اكتب الاسم هنا..."
+        autocomplete="off">
+
+
+    <button
+        class="btn-action"
+        onclick="unlockSite()">
+
+        افتح الكارت ♡
+
+    </button>
+
+
+    <div
+        id="lock-error"
+        class="error-msg">
+
+        الاسم مش صح، حاول تاني يا زيزو 😉
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<div
+    id="stage-hero">
+
+
+    <div class="hero-top">
+
+
+        <div class="small-love">
+
+            ✨ النهاردة يوم مميز جدًا ✨
+
+        </div>
+
+
+        <h1 class="title-en handwritten">
+
+            Happy Birthday
+
+        </h1>
+
+
+        <div class="hero-name">
+
+            To my favorite person — Zizo ❤️
+
+        </div>
+
+
+    </div>
+
+
+    <div class="hero-img-box">
+
+        <img
+            src="9(1).jpeg"
+            alt="Our Photo">
+
+    </div>
+
+
+    <p class="hero-caption">
+
+        كل سنة وأنت أحلى صدفة حصلتلي ❤️
+
+    </p>
+
+
+    <button
+        class="btn-action"
+        onclick="openStopModal()">
+
+        كمل... لسة في حاجات حلوة جوا ✨
+
+    </button>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     MODAL
+===================================================== -->
+
+<div id="modal-stop">
+
+
+    <div class="modal-card">
+
+
+        <h3 class="modal-title">
+
+            استنى رايح فين يا زيزو ✋❤️
+
+        </h3>
+
+
+        <div class="zizo-img-container">
+
+            <img
+                src="17.jpeg"
+                alt="Zizo">
+
+        </div>
+
+
+        <div class="date-badge">
+
+            15 / 12 / 2022
+
+        </div>
+
+
+        <p class="modal-text">
+
+            دي أول مرة أتعامل معاك فيها
+            وأول مرة أشوفك من قريب،
+            ومن وقتها وحكايتنا بدأت...
+            ومبسوطة بيها جدًا ❤️
+
+        </p>
+
+
+        <button
+            class="btn-action"
+            onclick="goToTimeline()">
+
+            خلاص كمل يلا 🚀
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     TIMELINE
+===================================================== -->
+
+<div
+    id="stage-timeline">
+
+
+    <div class="timeline-header">
+
+
+        <h2 class="timeline-title handwritten">
+
+            حكايتنا ❤️
+
+        </h2>
+
+
+        <p class="timeline-subtitle">
+
+            ست ذكريات... وست حكايات
+
+        </p>
+
+
+    </div>
+
+
+    <div class="alert-banner">
+
+        🎁 افتح كل بوكس واحدة واحدة...
+        كل بوكس مخبي وراه ذكرى ❤️
+
+    </div>
+
+
+    <div class="timeline">
+
+
+        <!-- =================================================
+             MEMORY 1
+        ================================================= -->
+
+        <div class="timeline-item">
+
+            <div
+                class="timeline-dot">
+            </div>
+
+
+            <div
+                class="mystery-box"
+                id="box-1"
+                onclick="revealMemory(1)">
+
+                <i class="fas fa-gift"></i>
+
+            </div>
+
+
+            <div
+                class="timeline-content"
+                id="memory-1">
+
+
+                <div class="timeline-photo">
+
+                    <!-- غيري اسم الصورة هنا -->
+
+                    <img
+                        src="14.jpeg"
+                        alt="Memory 1">
+
+                </div>
+
+
+                <div class="memory-text">
+
+                    <div class="memory-number">
+
+                        الذكرى الأولى ❤️
+
+                    </div>
+
+      كان من احلى اعياد الميلاد الي عدت بينا وكنت مبسوطه اني عرفت افرحك فيه ❤️
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             MEMORY 2
+        ================================================= -->
+
+        <div class="timeline-item">
+
+            <div
+                class="timeline-dot">
+            </div>
+
+
+            <div
+                class="mystery-box"
+                id="box-2"
+                onclick="revealMemory(2)">
+
+                <i class="fas fa-gift"></i>
+
+            </div>
+
+
+            <div
+                class="timeline-content"
+                id="memory-2">
+
+
+                <div class="timeline-photo">
+
+                    <!-- حطي الصورة رقم 2 هنا -->
+
+                    <img
+                        src="16.jpeg"
+                        alt="Memory 2">
+
+                </div>
+
+
+                <div class="memory-text">
+
+                    <div class="memory-number">
+
+                        الذكرى الثانية ✨
+
+                    </div>
+                   احمد حباية العيد ف الصورة بس مضطرين نستحمله 😂 ❤️
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             MEMORY 3
+        ================================================= -->
+
+        <div class="timeline-item">
+
+            <div
+                class="timeline-dot">
+            </div>
+
+
+            <div
+                class="mystery-box"
+                id="box-3"
+                onclick="revealMemory(3)">
+
+                <i class="fas fa-gift"></i>
+
+            </div>
+
+
+            <div
+                class="timeline-content"
+                id="memory-3">
+
+
+                <div class="timeline-photo">
+
+                    <!-- حطي الصورة رقم 3 هنا -->
+
+                    <img
+                        src="7(1).jpeg"
+                        alt="Memory 3">
+
+                </div>
+
+
+                <div class="memory-text">
+
+                    <div class="memory-number">
+
+                        الذكرى الثالثة 🌸
+
+                    </div>
+ اليوم ده بقا بحبه جدا قاعدتنا ع البحر هزرانا ولعبنا وضحكنا مع بعض كان يوم حلو بيك يحتتي 🥰
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             MEMORY 4
+        ================================================= -->
+
+        <div class="timeline-item">
+
+            <div
+                class="timeline-dot">
+            </div>
+
+
+            <div
+                class="mystery-box"
+                id="box-4"
+                onclick="revealMemory(4)">
+
+                <i class="fas fa-gift"></i>
+
+            </div>
+
+
+            <div
+                class="timeline-content"
+                id="memory-4">
+
+
+                <div class="timeline-photo">
+
+                    <!-- حطي الصورة رقم 4 هنا -->
+
+                    <img
+                        src="5(1).jpeg"
+                        alt="Memory 4">
+
+                </div>
+
+
+                <div class="memory-text">
+
+                    <div class="memory-number">
+
+                        الذكرى الرابعة 🥹
+
+                    </div>
+
+                    كل مرة ببص على الصورة دي
+                    بفتكر قد إيه وجودك
+                   بيخلي كل حاجه ليها طعم منغيرك مكنتش هقف الواقفه دي ولا كنت هنجح ف حاجه منغيرك  ❤️
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             MEMORY 5
+        ================================================= -->
+
+        <div class="timeline-item">
+
+            <div
+                class="timeline-dot">
+            </div>
+
+
+            <div
+                class="mystery-box"
+                id="box-5"
+                onclick="revealMemory(5)">
+
+                <i class="fas fa-gift"></i>
+
+            </div>
+
+
+            <div
+                class="timeline-content"
+                id="memory-5">
+
+
+                <div class="timeline-photo">
+
+                    <!-- حطي الصورة رقم 5 هنا -->
+
+                    <img
+                        src="4(1).jpeg"
+                        alt="Memory 5">
+
+                </div>
+
+
+                <div class="memory-text">
+
+                    <div class="memory-number">
+
+                        الذكرى الخامسة 💕
+
+                    </div>
+
+                    واحدة من الصور اللي
+                    مهما الوقت عدى...
+                    هتفضل ليها مكان خاص عندي ❤️
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             MEMORY 6
+        ================================================= -->
+
+        <div class="timeline-item">
+
+            <div
+                class="timeline-dot">
+            </div>
+
+
+            <div
+                class="mystery-box"
+                id="box-6"
+                onclick="revealMemory(6)">
+
+                <i class="fas fa-gift"></i>
+
+            </div>
+
+
+            <div
+                class="timeline-content"
+                id="memory-6">
+
+
+                <div class="timeline-photo">
+
+                    <!-- حطي الصورة رقم 6 هنا -->
+
+                    <img
+                        src="11.jpeg"
+                        alt="Memory 6">
+
+                </div>
+
+
+                <div class="memory-text">
+
+                    <div class="memory-number">
+
+                         يا كوووتي ع الحلويات حتى وانت صغنون 😂❤❤️
+
+                    </div>
+
+                    وآخر بوكس مش معناه إن
+                    الحكاية خلصت...
+                    دي مجرد بداية لحاجات
+                    كتير لسة جاية بينا ❤️✨
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <button
+        id="btn-final-gift"
+        class="btn-action btn-gift-final"
+        onclick="openFinalGift()">
+
+        وصلت لآخر الحكاية...
+        افتح هديتك 🎁❤️
+
+    </button>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     FINAL
+===================================================== -->
+
+<div
+    id="stage-final"
+    class="main-card">
+
+
+    <div class="final-header">
+
+
+        <h2 class="final-title handwritten">
+
+            هديتك يا سيدي ❤️
+
+        </h2>
+
+
+        <p class="final-subtitle">
+
+            وصلت لآخر الحكاية...
+            بس دي مش نهايتها ✨
+
+        </p>
+
+
+    </div>
+
+
+    <p class="sweet-text">
+
+        وجودك في حياتي بيخلي كل حاجة
+        أطعم وأحلى..
+
+        <br>
+
+        شكراً على كل لحظة حلوة
+        وعلى كل ضحكة من القلب..
+
+        <br>
+
+        كل سنة وأنت معايا
+        وبخير دايمًا يا زيزو ❤️
+
+    </p>
+
+
+
+    <!-- VOICE -->
+
+    <div
+        class="audio-card"
+        id="audio-card-box">
+
+
+        <button
+            class="btn-audio-play"
+            onclick="toggleVoice()">
+
+            <i
+                class="fas fa-play"
+                id="voice-icon"></i>
+
+        </button>
+
+
+        <div class="wave-bars">
+
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+
+        </div>
+
+
+        <span
+            id="voice-timer"
+            style="
+            font-size:.8rem;
+            color:var(--soft);
+            ">
+
+            0:00 / 0:00
+
+        </span>
+
+
+    </div>
+
+
+
+    <div class="final-photo-box">
+
+        <img
+            src="15.jpeg"
+            alt="Final Memory">
+
+    </div>
+
+
+    <div class="final-love handwritten">
+
+         احلى عزوز ف حياتي  ♡
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+/* =====================================================
+   PASSWORD
+===================================================== */
+
+const CORRECT_PASSWORD = "سنو وايت";
+
+
+/* =====================================================
+   AUDIO
+===================================================== */
+
+const audioOurSong =
+document.getElementById(
+    'audio-our-song'
+);
+
+
+const audioVoice =
+document.getElementById(
+    'audio-voice'
+);
+
+
+/* =====================================================
+   START
+===================================================== */
+
+function startBirthday(){
+
+    document.getElementById(
+        'birthday-intro'
+    ).style.display = 'none';
+
+
+    document.getElementById(
+        'card-lock'
+    ).style.display = 'block';
+
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:'smooth'
+
+    });
+
+}
+
+
+/* =====================================================
+   UNLOCK
+
+   بمجرد كتابة الباسورد صح:
+   أغنيتكم تبدأ تلقائيًا ❤️🎵
+===================================================== */
+
+function unlockSite(){
+
+    const val =
+    document.getElementById(
+        'pass-input'
+    ).value.trim();
+
+
+    const error =
+    document.getElementById(
+        'lock-error'
+    );
+
+
+    if(val === CORRECT_PASSWORD){
+
+        error.style.display = 'none';
+
+
+        document.getElementById(
+            'card-lock'
+        ).style.display = 'none';
+
+
+        document.getElementById(
+            'stage-hero'
+        ).style.display = 'block';
+
+
+        /* =========================================
+           OUR SONG STARTS HERE ❤️🎵
+
+           الأغنية اللي حطيتيها في:
+
+           our-song.mp3
+
+           هتبدأ بمجرد نجاح الباسورد.
+        ========================================= */
+
+        audioOurSong.currentTime = 0;
+
+        audioOurSong.play()
+        .catch(function(error){
+
+            console.log(
+                "Music couldn't start:",
+                error
+            );
+
+        });
+
+
+        window.scrollTo({
+
+            top:0,
+
+            behavior:'smooth'
+
+        });
+
+
+    }else{
+
+        error.style.display = 'block';
+
+    }
+
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+function openStopModal(){
+
+    document.getElementById(
+        'modal-stop'
+    ).style.display = 'flex';
+
+}
+
+
+/* =====================================================
+   TIMELINE
+===================================================== */
+
+function goToTimeline(){
+
+    document.getElementById(
+        'modal-stop'
+    ).style.display = 'none';
+
+
+    document.getElementById(
+        'stage-hero'
+    ).style.display = 'none';
+
+
+    document.getElementById(
+        'stage-timeline'
+    ).style.display = 'block';
+
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:'smooth'
+
+    });
+
+}
+
+
+/* =====================================================
+   MEMORY BOXES
+
+   كل بوكس بيتفتح مرة واحدة
+===================================================== */
+
+let openedMemories = 0;
+
+const totalMemories = 6;
+
+
+function revealMemory(id){
+
+    const box =
+    document.getElementById(
+        `box-${id}`
+    );
+
+
+    const memory =
+    document.getElementById(
+        `memory-${id}`
+    );
+
+
+    if(
+        memory.classList.contains('show')
+    ){
+
+        return;
+
+    }
+
+
+    box.classList.add('opened');
+
+
+    memory.classList.add('show');
+
+
+    openedMemories++;
+
+
+    /* =========================================
+       لما الـ 6 بوكسات يتفتحوا
+       زر الهدية يظهر
+    ========================================= */
+
+    if(
+        openedMemories === totalMemories
+    ){
+
+        document
+        .getElementById(
+            'btn-final-gift'
+        )
+        .classList.add('active');
+
+
+        if(typeof confetti === 'function'){
+
+            confetti({
+
+                particleCount:80,
+
+                spread:70,
+
+                origin:{
+                    y:.7
+                }
+
+            });
+
+        }
+
+    }
+
+}
+
+
+/* =====================================================
+   FINAL GIFT
+===================================================== */
+
+function openFinalGift(){
+
+    document.getElementById(
+        'stage-timeline'
+    ).style.display = 'none';
+
+
+    document.getElementById(
+        'stage-final'
+    ).style.display = 'block';
+
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:'smooth'
+
+    });
+
+
+    if(typeof confetti === 'function'){
+
+        confetti({
+
+            particleCount:180,
+
+            spread:100,
+
+            startVelocity:35,
+
+            origin:{
+                y:.6
+            }
+
+        });
+
+    }
+
+}
+
+
+/* =====================================================
+   VOICE
+===================================================== */
+
+let isVoicePlaying = false;
+
+
+function toggleVoice(){
+
+    const icon =
+    document.getElementById(
+        'voice-icon'
+    );
+
+
+    const card =
+    document.getElementById(
+        'audio-card-box'
+    );
+
+
+    if(!isVoicePlaying){
+
+        /* وقف أغنيتكم */
+
+        audioOurSong.pause();
+
+
+        audioVoice.play();
+
+
+        icon.className =
+        'fas fa-pause';
+
+
+        card.classList.add(
+            'playing'
+        );
+
+
+        isVoicePlaying = true;
+
+
+    }else{
+
+        audioVoice.pause();
+
+
+        icon.className =
+        'fas fa-play';
+
+
+        card.classList.remove(
+            'playing'
+        );
+
+
+        isVoicePlaying = false;
+
+    }
+
+}
+
+
+/* =====================================================
+   VOICE TIMER
+===================================================== */
+
+audioVoice.ontimeupdate = function(){
+
+    const curMin =
+    Math.floor(
+        audioVoice.currentTime / 60
+    );
+
+
+    const curSec =
+    Math.floor(
+        audioVoice.currentTime % 60
+    );
+
+
+    const durMin =
+    Math.floor(
+        audioVoice.duration / 60
+    ) || 0;
+
+
+    const durSec =
+    Math.floor(
+        audioVoice.duration % 60
+    ) || 0;
+
+
+    document.getElementById(
+        'voice-timer'
+    ).innerText =
+
+    `${curMin}:${curSec < 10 ? '0' : ''}${curSec}
+    / ${durMin}:${durSec < 10 ? '0' : ''}${durSec}`;
+
+};
+
+
+/* =====================================================
+   VOICE ENDED
+===================================================== */
+
+audioVoice.onended = function(){
+
+    isVoicePlaying = false;
+
+
+    document.getElementById(
+        'voice-icon'
+    ).className =
+    'fas fa-play';
+
+
+    document.getElementById(
+        'audio-card-box'
+    ).classList.remove(
+        'playing'
+    );
+
+
+    /* رجوع أغنيتكم بعد التسجيل */
+
+    audioOurSong.play()
+    .catch(function(error){
+
+        console.log(error);
+
+    });
+
+};
+
+
+/* =====================================================
+   ENTER
+===================================================== */
+
+document.getElementById(
+    'pass-input'
+).addEventListener(
+    'keypress',
+    function(e){
+
+        if(e.key === 'Enter'){
+
+            unlockSite();
+
+        }
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
+```
